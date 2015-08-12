@@ -124,7 +124,7 @@ module.exports = {
             };
             test.throws(function() {
                 this.miner.runConcurrent(testSource, 1);
-            })
+            });
             test.done();
         },
         "Test success": function(test) {
