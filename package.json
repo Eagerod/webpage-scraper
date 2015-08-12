@@ -1,7 +1,6 @@
 {
     "name": "webpage-scraper",
     "description": "Application for scraping information from arbitrary web sources.",
-    "private": true,
     "version": "0.0.1",
     "keywords": [
         "web",
