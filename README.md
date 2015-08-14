@@ -17,14 +17,16 @@ In order to get it doing useful stuff, you'll have to either subclass the basic 
 This snippet pulls in this readme from github, and writes it to `/tmp/readme.html`.
 
 ```
-var miner = new WebpageMiner("/tmp/");
+var WebpageScraper = require("webpage-scraper");
 
-miner.getContent = function(url, document, next) {
+var scraper = new WebpageScraper("/tmp/");
+
+scraper.getContent = function(url, document, next) {
     var readme = document.getElementById("readme");
     return next(null, "readme.html",  readme.toString())
 };
 
-miner.runIndefinitely("https://github.com/Eagerod/webpage-scraper", function(err) {
+scraper.runIndefinitely("https://github.com/Eagerod/webpage-scraper", function(err) {
     if ( err ) {
         throw err;
     }
