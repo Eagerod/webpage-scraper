@@ -1,7 +1,7 @@
 {
     "name": "webpage-scraper",
     "description": "Application for scraping information from arbitrary web sources.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "keywords": [
         "web",
         "scraping",
@@ -16,7 +16,7 @@
     "dependencies": {
         "request": "2.55.0",
         "underscore": "1.8.3",
-        "html-cruncher": "0.0.8"
+        "html-cruncher": "0.2.0"
     },
     "devDependencies": {
         "jsdoc": "3.3.2",
